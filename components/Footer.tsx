@@ -1,4 +1,5 @@
 "use client";
+import { GiMountaintop } from "react-icons/gi";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -12,7 +13,10 @@ export default function Footer() {
               href="#"
               aria-label="Brand"
             >
-              Brand
+              Mountain View
+              <br />
+              Chamber of Commerce
+              <GiMountaintop className="text-4xl my-4" />
             </a>
           </div>
 
@@ -216,12 +220,9 @@ function SubscribeForm() {
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     // Clear the form
-      event.currentTarget.reset();
-      
-    // Show a toast
-    
-      
+    event.currentTarget.reset();
 
+    // Show a toast
   }
 
   return (
