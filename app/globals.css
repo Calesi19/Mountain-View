@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 
-html {
-  background-color: #FAFAFA;
-}
+
 
 main {
   min-height: 100vh;

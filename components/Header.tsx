@@ -1,17 +1,20 @@
 import { IoMenu, IoClose } from "react-icons/io5";
-
+import { FaLinkedin, FaFacebook } from "react-icons/fa";
+import { RiFacebookFill } from "react-icons/ri";
 export default function Header() {
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-4 dark:bg-gray-800">
+    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-4 text-[#16284B]">
       <nav
         className="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between"
         aria-label="Global"
       >
         <a
-          className="sm:order-1 flex-none text-xl font-semibold dark:text-white"
+          className="sm:order-1 flex-none text-xl leading-6 font-semibold"
           href="#"
         >
-          Brand
+          Mountain View
+          <br />
+          Chamber of Commerce
         </a>
         <div className="sm:order-3 flex items-center gap-x-2">
           <button
@@ -21,17 +24,13 @@ export default function Header() {
             aria-controls="navbar-alignment"
             aria-label="Toggle navigation"
           >
-            
-                      <IoMenu className="hs-collapse-open:hidden flex-shrink-0 size-4" />
-                        <IoClose className="hs-collapse-open:block hidden flex-shrink-0 size-4" />
-            
+            <IoMenu className="hs-collapse-open:hidden flex-shrink-0 size-4" />
+            <IoClose className="hs-collapse-open:block hidden flex-shrink-0 size-4" />
           </button>
-          <button
-            type="button"
-            className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-          >
-            Button
-          </button>
+          <div className="flex gap-x-4 items-center text-[#16284B]">
+            <FaFacebook className="text-2xl" />
+            <FaLinkedin className="text-2xl" />
+          </div>
         </div>
         <div
           id="navbar-alignment"
