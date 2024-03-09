@@ -3,14 +3,14 @@ import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import { RiFacebookFill } from "react-icons/ri";
 export default function Header() {
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-4 text-[#16284B]">
+    <header className="bg-white/10 backdrop-blur-lg flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-4 text-[#16284B] sticky top-0 z-50">
       <nav
         className="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between"
         aria-label="Global"
       >
         <a
           className="sm:order-1 flex-none text-xl leading-6 font-semibold"
-          href="#"
+          href="/"
         >
           Mountain View
           <br />
@@ -38,29 +38,29 @@ export default function Header() {
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
             <a
-              className="font-medium text-blue-500"
+              className="font-medium text-[#16284B]"
               href="#"
               aria-current="page"
             >
-              Landing
+              Discovery
             </a>
             <a
               className="font-medium text-gray-600 hover:text-gray-400 d"
               href="#"
             >
-              Account
+              Directory
             </a>
             <a
               className="font-medium text-gray-600 hover:text-gray-400 d"
               href="#"
             >
-              Work
+              Join
             </a>
             <a
               className="font-medium text-gray-600 hover:text-gray-400 d"
               href="#"
             >
-              Blog
+              Contact
             </a>
           </div>
         </div>
