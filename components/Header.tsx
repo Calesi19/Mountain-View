@@ -27,7 +27,7 @@ export default function Header() {
             <IoMenu className="hs-collapse-open:hidden flex-shrink-0 size-4" />
             <IoClose className="hs-collapse-open:block hidden flex-shrink-0 size-4" />
           </button>
-          <div className="flex gap-x-4 items-center text-[#16284B]">
+          <div className="flex gap-x-4 items-center">
             <FaFacebook className="text-2xl" />
             <FaLinkedin className="text-2xl" />
           </div>
@@ -38,26 +38,26 @@ export default function Header() {
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
             <a
-              className="font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="font-medium text-blue-500"
               href="#"
               aria-current="page"
             >
               Landing
             </a>
             <a
-              className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="font-medium text-gray-600 hover:text-gray-400 d"
               href="#"
             >
               Account
             </a>
             <a
-              className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="font-medium text-gray-600 hover:text-gray-400 d"
               href="#"
             >
               Work
             </a>
             <a
-              className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="font-medium text-gray-600 hover:text-gray-400 d"
               href="#"
             >
               Blog
