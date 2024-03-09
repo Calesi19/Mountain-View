@@ -42,14 +42,14 @@ const BlogPostCarousel = () => {
 
   return (
     <section className="py-16" ref={ref}>
-      <div className="relative overflow-hidden">
-        <div className="container mx-auto max-w-6xl">
+      <div className="relative">
+        <div className="container overflow-hidden p-8 bg-gray-50 rounded-xl">
           <div className="flex items-center justify-between">
-            <h2 className="mb-4 text-4xl">Upcoming Events</h2>
+            <h2 className="mb-4 text-2xl font-semibold">Upcoming Events</h2>
 
             <div className="flex items-center gap-2">
               <button
-                className={`rounded-lg border-[1px] border-neutral-400 bg-white p-1.5 text-2xl transition-opacity ${
+                className={`rounded-lg border-neutral-400 bg-white p-1.5 text-2xl transition-opacity ${
                   CAN_SHIFT_LEFT ? "" : "opacity-30"
                 }`}
                 disabled={!CAN_SHIFT_LEFT}
@@ -58,7 +58,7 @@ const BlogPostCarousel = () => {
                 <FiArrowLeft />
               </button>
               <button
-                className={`rounded-lg border-[1px] border-neutral-400 bg-white p-1.5 text-2xl transition-opacity ${
+                className={`rounded-lg border-neutral-400 bg-white p-1.5 text-2xl transition-opacity ${
                   CAN_SHIFT_RIGHT ? "" : "opacity-30"
                 }`}
                 disabled={!CAN_SHIFT_RIGHT}
@@ -101,11 +101,13 @@ const Post = ({ imgUrl, author, title, description }) => {
         className="mb-3 h-[200px] w-full rounded-lg object-cover"
         alt={`An image for a fake blog post titled ${title}`}
       />
+
+      <p className="mt-1.5 text-lg font-medium">{title}</p>
+
+      <p className="text-sm text-neutral-500">{description}</p>
       <span className="rounded-md border-[1px] border-neutral-500 px-1.5 py-1 text-xs uppercase text-neutral-500">
         {author}
       </span>
-      <p className="mt-1.5 text-lg font-medium">{title}</p>
-      <p className="text-sm text-neutral-500">{description}</p>
     </div>
   );
 };
@@ -123,7 +125,7 @@ const posts = [
   },
   {
     id: 2,
-    imgUrl: "/hero.jpg",
+    imgUrl: "/concert.jpg",
     author: "Kyle Parsons",
     title: "How to grow your personal brand as a web designer",
     description:
@@ -131,7 +133,7 @@ const posts = [
   },
   {
     id: 3,
-    imgUrl: "/hero.jpg",
+    imgUrl: "/meeting.jpg",
     author: "Andrea Bates",
     title: "Calm down, monoliths are totally fine",
     description:
@@ -139,7 +141,7 @@ const posts = [
   },
   {
     id: 4,
-    imgUrl: "/hero.jpg",
+    imgUrl: "/networking.jpg",
     author: "Jess Drum",
     title: "A quick guide to Framer Motion (for dummies)",
     description:
@@ -147,7 +149,7 @@ const posts = [
   },
   {
     id: 5,
-    imgUrl: "/hero.jpg",
+    imgUrl: "/service.jpg",
     author: "Phil White",
     title: "You probably don't need kubernetes",
     description:
@@ -155,7 +157,7 @@ const posts = [
   },
   {
     id: 6,
-    imgUrl: "/hero.jpg",
+    imgUrl: "/laptop.jpg",
     author: "Karen Peabody",
     title: "State of JavaScript in 2024",
     description:
@@ -163,7 +165,7 @@ const posts = [
   },
   {
     id: 7,
-    imgUrl: "/hero.jpg",
+    imgUrl: "/conference.jpg",
     author: "Dante Gordon",
     title: "What's new in Python?",
     description:

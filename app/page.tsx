@@ -16,7 +16,7 @@ export default function Home() {
 function Hero() {
   return (
     <section className="w-full flex flex-col justify-center items-center ">
-      <div className="container mx-auto w-full grid grid-cols-3 gap-4">
+      <div className="mx-auto w-full grid grid-cols-3 gap-4">
         <HeroCard />
 
         <WeatherCard />
@@ -56,11 +56,11 @@ function HeroCard() {
 
 function WeatherCard() {
   return (
-    <div className="w-full">
+    <div className="">
       <div className="group relative bg-white border text-white shadow-sm rounded-xl aspect-square w-[400px] h-[400px] transition-transform ease-in-out duration-1000 overflow-hidden ">
         <div className="w-full h-[400px] rounded-xl overflow-hidden">
           <Image
-            className="rounded-xl group-hover:blur-sm filter brightness-50 transform transition-transform ease-in-out duration-1000 group-hover:scale-105 group-hover:rotate-2 group-hover:translate-x-2 group-hover:translate-y-2"
+            className="rounded-xl group-hover:blur-sm filter brightness-50 transform transition-transform ease-in-out duration-1000 group-hover:scale-105"
             src="/hero.jpg"
             alt="Image Description"
             layout="fill"
@@ -70,7 +70,7 @@ function WeatherCard() {
 
         <div className="absolute top-0 start-0 end-0">
           <div className="p-4 md:p-5 bg-gradient-to-b from-[#000000] rounded-xl">
-            <h3 className="text-lg font-bold">Network</h3>
+            <h3 className="text-lg font-bold">Discover</h3>
             <p className="mt-1">
               Some quick example text to build on the card title and make up the
               bulk of the cards content.

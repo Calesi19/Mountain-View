@@ -1,6 +1,8 @@
 "use client";
 import { GiMountaintop } from "react-icons/gi";
 
+
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -21,7 +23,7 @@ export default function Footer() {
           </div>
 
           <div className="col-span-1">
-            <h4 className="font-semibold text-gray-100">Product</h4>
+            <h4 className="font-semibold text-gray-100">Contact</h4>
 
             <div className="mt-3 grid space-y-3">
               <p>
@@ -29,7 +31,7 @@ export default function Footer() {
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
-                  Pricing
+                  801-988-9777
                 </a>
               </p>
               <p>
@@ -37,7 +39,7 @@ export default function Footer() {
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
-                  Changelog
+                  info@mountainview.com
                 </a>
               </p>
               <p>
@@ -45,7 +47,8 @@ export default function Footer() {
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
-                  Docs
+                  1025 Frontage Road <br />
+                  Mountain View, UT, 84065
                 </a>
               </p>
             </div>
@@ -85,9 +88,9 @@ export default function Footer() {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
-                  href="#"
+                  href="https://calesi19.github.io/Mountain-View-Chamber-Website/"
                 >
-                  Customers
+                  Old Site
                 </a>
               </p>
             </div>
