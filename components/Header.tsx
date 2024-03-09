@@ -1,6 +1,9 @@
 import { IoMenu, IoClose } from "react-icons/io5";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import { RiFacebookFill } from "react-icons/ri";
+import { GiMountaintop } from "react-icons/gi";
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="bg-white/10 backdrop-blur-lg flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-4 text-[#16284B] sticky top-0 z-50">
@@ -8,28 +11,36 @@ export default function Header() {
         className="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between"
         aria-label="Global"
       >
-        <a
-          className="sm:order-1 flex-none text-xl leading-6 font-semibold"
-          href="/"
-        >
-          Mountain View
-          <br />
-          Chamber of Commerce
-        </a>
+        <div className="flex gap-4 items-center">
+          <GiMountaintop className="text-4xl" />
+          <a
+            className="sm:order-1 flex-none text-xl leading-6 font-semibold"
+            href="/"
+          >
+            Mountain View
+            <br />
+            Chamber of Commerce
+          </a>
+        </div>
+
         <div className="sm:order-3 flex items-center gap-x-2">
           <button
             type="button"
-            className="sm:hidden hs-collapse-toggle p-2.5 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            className="sm:hidden hs-collapse-toggle p-2.5 inline-flex justify-center items-center gap-x-2 rounded-lg border-transparent border-gray-200 text-gray-800 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
             data-hs-collapse="#navbar-alignment"
             aria-controls="navbar-alignment"
             aria-label="Toggle navigation"
           >
-            <IoMenu className="hs-collapse-open:hidden flex-shrink-0 size-4" />
-            <IoClose className="hs-collapse-open:block hidden flex-shrink-0 size-4" />
+            <IoMenu className="hs-collapse-open:hidden flex-shrink-0 size-7" />
+            <IoClose className="hs-collapse-open:block hidden flex-shrink-0 size-7" />
           </button>
-          <div className="flex gap-x-4 items-center">
-            <FaFacebook className="text-2xl" />
-            <FaLinkedin className="text-2xl" />
+          <div className="md:flex gap-x-4 items-center hidden">
+            <Link href="#">
+              <FaFacebook className="text-2xl" />
+            </Link>
+            <Link href="#">
+              <FaLinkedin className="text-2xl" />
+            </Link>
           </div>
         </div>
         <div

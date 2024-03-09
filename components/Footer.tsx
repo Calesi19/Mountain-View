@@ -1,3 +1,5 @@
+"use client";
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -6,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
           <div className="col-span-full lg:col-span-1">
             <a
-              className="flex-none text-xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="flex-none text-xl font-semibold text-white "
               href="#"
               aria-label="Brand"
             >
@@ -20,7 +22,7 @@ export default function Footer() {
             <div className="mt-3 grid space-y-3">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
                   Pricing
@@ -28,7 +30,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
                   Changelog
@@ -36,7 +38,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
                   Docs
@@ -51,7 +53,7 @@ export default function Footer() {
             <div className="mt-3 grid space-y-3">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
                   About us
@@ -59,7 +61,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
                   Blog
@@ -67,7 +69,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
                   Careers
@@ -78,7 +80,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
                   Customers
@@ -90,31 +92,7 @@ export default function Footer() {
           <div className="col-span-2">
             <h4 className="font-semibold text-gray-100">Stay up to date</h4>
 
-            <form>
-              <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-gray-800">
-                <div className="w-full">
-                  <label htmlFor="hero-input" className="sr-only">
-                    Search
-                  </label>
-                  <input
-                    type="text"
-                    id="hero-input"
-                    name="hero-input"
-                    className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600"
-                    placeholder="Enter your email"
-                  />
-                </div>
-                <a
-                  className="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
-                >
-                  Subscribe
-                </a>
-              </div>
-              <p className="mt-3 text-sm text-gray-400">
-                New UI kits or big discounts. Never spam.
-              </p>
-            </form>
+            <SubscribeForm />
           </div>
         </div>
 
@@ -205,5 +183,72 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+function SubscribeForm() {
+  const toast = (
+    <div
+      className="max-w-xs bg-white border border-gray-200 rounded-xl shadow-lg dark:bg-gray-800 dark:border-gray-700"
+      role="alert"
+    >
+      <div className="flex p-4">
+        <div className="flex-shrink-0">
+          <svg
+            className="flex-shrink-0 size-4 text-teal-500 mt-0.5"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+        </div>
+        <div className="ms-3">
+          <p className="text-sm text-gray-700 dark:text-gray-400">
+            This is a success message.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    // Clear the form
+      event.currentTarget.reset();
+      
+    // Show a toast
+    
+      
+
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 ">
+        <div className="w-full">
+          <label htmlFor="hero-input" className="sr-only">
+            Search
+          </label>
+          <input
+            type="text"
+            id="hero-input"
+            name="hero-input"
+            className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+            placeholder="Enter your email"
+          />
+        </div>
+        <button
+          className="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+          type="submit"
+        >
+          Subscribe
+        </button>
+      </div>
+      <p className="mt-3 text-sm text-gray-400">
+        We&apos;ll update you with upcoming events.
+      </p>
+    </form>
   );
 }
