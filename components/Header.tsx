@@ -1,6 +1,5 @@
 import { IoMenu, IoClose } from "react-icons/io5";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
-import { RiFacebookFill } from "react-icons/ri";
 import { GiMountaintop } from "react-icons/gi";
 import Link from "next/link";
 
@@ -57,19 +56,19 @@ export default function Header() {
             </a>
             <a
               className="font-medium text-gray-600 hover:text-gray-400 d"
-              href="#"
+              href="/directory"
             >
               Directory
             </a>
             <a
               className="font-medium text-gray-600 hover:text-gray-400 d"
-              href="#"
+              href="/join"
             >
               Join
             </a>
             <a
               className="font-medium text-gray-600 hover:text-gray-400 d"
-              href="#"
+              href="/contact"
             >
               Contact
             </a>
