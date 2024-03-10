@@ -76,7 +76,7 @@ function MembershipPlans() {
             <span className="text-gray-800 ">No fees</span>
           </li>
         </ul>
-
+        <div className="h-full" />
         <a
           className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none "
           href="#"
@@ -137,7 +137,7 @@ function MembershipPlans() {
             <span className="text-gray-800 ">10% Off Advertising</span>
           </li>
         </ul>
-
+        <div className="h-full" />
         <a
           className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none "
           href="https://github.com/htmlstreamofficial/preline/tree/main/examples/html"
@@ -149,7 +149,7 @@ function MembershipPlans() {
       <div className="flex h-full flex-col border border-gray-200 text-center rounded-xl p-8 ">
         <h4 className="font-medium text-lg text-gray-800 ">Gold</h4>
         <span className="mt-5 font-bold text-5xl text-gray-800">
-          <span className="font-bold text-2xl -me-2">$</span>
+          <span className="font-bold text-2xl -me-1">$</span>
           100
         </span>
         <p className="mt-2 text-sm text-gray-500">
@@ -213,6 +213,7 @@ function MembershipPlans() {
             </span>
           </li>
         </ul>
+        <div className="h-full" />
 
         <a
           className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
@@ -225,7 +226,7 @@ function MembershipPlans() {
       <div className="flex h-full flex-col border border-gray-200 text-center rounded-xl p-8">
         <h4 className="font-medium text-lg text-gray-800 ">Platinum</h4>
         <span className="mt-5 font-bold text-5xl text-gray-800 ">
-          <span className="font-bold text-2xl -me-2">$</span>
+          <span className="font-bold text-2xl -me-1">$</span>
           149
         </span>
         <p className="mt-2 text-sm text-gray-500">
@@ -321,7 +322,7 @@ function MembershipPlans() {
             <span className="text-gray-800 ">1 Free Training per Quarter</span>
           </li>{" "}
         </ul>
-
+        <div className="h-full" />
         <a
           className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
           href="#"

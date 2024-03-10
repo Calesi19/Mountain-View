@@ -5,14 +5,14 @@ import { PiChatsBold } from "react-icons/pi";
 export default function ContactPage(): React.JSX.Element {
   return (
     <main className=" py-16">
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="max-w-2xl lg:max-w-5xl mx-auto">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl ">
               Contact us
             </h1>
             <p className="mt-1 text-gray-600 ">
-              We&apos;d love to talk about how we can help you.
+              We&apos;d love to talk about how we can help your business.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function ContactPage(): React.JSX.Element {
                     <textarea
                       id="hs-about-contacts-1"
                       name="hs-about-contacts-1"
-                      rows="4"
+                      rows={4}
                       className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none border"
                       placeholder="Details"
                     ></textarea>
@@ -129,7 +129,7 @@ export default function ContactPage(): React.JSX.Element {
                   </p>
                   <a
                     className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800"
-                    href="#"
+                    href="/join"
                   >
                     Membership Plans
                     <svg
@@ -163,7 +163,7 @@ export default function ContactPage(): React.JSX.Element {
                   </p>
                   <a
                     className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800"
-                    href="#"
+                    href="/directory"
                   >
                     Directory
                     <svg
@@ -228,7 +228,7 @@ export default function ContactPage(): React.JSX.Element {
                   </p>
                   <a
                     className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
-                    href="#"
+                    href="mailto:info@mountainview.com"
                   >
                     info@mountainview.com
                   </a>
