@@ -54,7 +54,7 @@ export default function Footer(): React.JSX.Element {
           </div>
 
           <div className="col-span-1">
-            <h4 className="font-semibold text-gray-100">Company</h4>
+            <h4 className="font-semibold text-gray-100">Chamber</h4>
 
             <div className="mt-3 grid space-y-3">
               <p>
@@ -62,7 +62,7 @@ export default function Footer(): React.JSX.Element {
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
-                  About us
+                  Partners
                 </a>
               </p>
               <p>
@@ -70,20 +70,10 @@ export default function Footer(): React.JSX.Element {
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
                   href="#"
                 >
-                  Blog
+                  Join
                 </a>
               </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
-                  href="#"
-                >
-                  Careers
-                </a>{" "}
-                <span className="inline ms-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-lg">
-                  Were hiring
-                </span>
-              </p>
+              
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 "
