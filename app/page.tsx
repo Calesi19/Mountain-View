@@ -113,7 +113,7 @@ function NetworkingCard() {
       </div>
       <div className="flex absolute bottom-0 right-0">
         <div className="flex p-6 items-center gap-2">
-          Explore
+          Connect
           <FaArrowRightLong className="text-xl group-hover:translate-x-1 transition-transform ease-in-out duration-200" />
         </div>
       </div>
