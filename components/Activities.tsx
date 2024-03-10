@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import React, { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 
@@ -14,7 +14,7 @@ const BREAKPOINTS = {
   lg: 1024,
 };
 
-const BlogPostCarousel = () => {
+const BlogPostCarousel = (): React.JSX.Element => {
   const [ref, { width }] = useMeasure();
   const [offset, setOffset] = useState(0);
 
@@ -26,14 +26,14 @@ const BlogPostCarousel = () => {
   const CAN_SHIFT_RIGHT =
     Math.abs(offset) < CARD_SIZE * (posts.length - CARD_BUFFER);
 
-  const shiftLeft = () => {
+  const shiftLeft = (): void => {
     if (!CAN_SHIFT_LEFT) {
       return;
     }
     setOffset((pv) => (pv += CARD_SIZE));
   };
 
-  const shiftRight = () => {
+  const shiftRight = (): void => {
     if (!CAN_SHIFT_RIGHT) {
       return;
     }
@@ -87,7 +87,19 @@ const BlogPostCarousel = () => {
   );
 };
 
-const Post = ({ imgUrl, author, title, description }) => {
+interface PostProps {
+  imgUrl: string;
+  author: string;
+  title: string;
+  description: string;
+}
+
+const Post = ({
+  imgUrl,
+  author,
+  title,
+  description,
+}: PostProps): React.JSX.Element => {
   return (
     <div
       className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1"

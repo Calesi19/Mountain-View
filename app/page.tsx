@@ -1,8 +1,9 @@
+import React from "react";
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
-import BlogPostCarousel from "@/components/Activities";
+import BlogPostCarousel from "../components/Activities";
 
-export default function Home() {
+export default function Home(): React.JSX.Element {
   return (
     <main className=" py-16">
       <Hero />
@@ -13,7 +14,7 @@ export default function Home() {
 
 // Path: app/page.tsx
 
-function Hero() {
+function Hero(): React.JSX.Element {
   return (
     <section className="w-full flex flex-col justify-center items-center ">
       <div className="w-full grid grid-cols-3 gap-4 container">
@@ -28,7 +29,7 @@ function Hero() {
   );
 }
 
-function HeroCard() {
+function HeroCard(): React.JSX.Element {
   return (
     <div className="relative bg-white border shadow-sm rounded-xl w-full col-span-2">
       <div className="w-full h-[400px] rounded-xl overflow-hidden">
@@ -54,7 +55,7 @@ function HeroCard() {
   );
 }
 
-function WeatherCard() {
+function WeatherCard(): React.JSX.Element {
   return (
     <div className="">
       <div className="group relative bg-white border text-white shadow-sm rounded-xl aspect-square w-[400px] h-[400px] transition-transform ease-in-out duration-1000 overflow-hidden ">
@@ -88,7 +89,7 @@ function WeatherCard() {
   );
 }
 
-function NetworkingCard() {
+function NetworkingCard(): React.JSX.Element {
   return (
     <div className="group relative bg-white border text-white shadow-sm rounded-xl overflow-hidden aspect-square h-[400px] transition-transform ease-in-out duration-1000 ">
       <div className="w-full h-[400px] rounded-xl overflow-hidden">
@@ -121,7 +122,7 @@ function NetworkingCard() {
   );
 }
 
-function BusinessCard() {
+function BusinessCard(): React.JSX.Element {
   return (
     <div className="relative bg-white border shadow-sm rounded-xl aspect-square h-[400px] transition-transform ease-in-out duration-1000 ">
       <div className="w-full h-[400px] rounded-xl overflow-hidden">

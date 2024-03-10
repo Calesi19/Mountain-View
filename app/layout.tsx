@@ -1,11 +1,9 @@
+import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import PrelineScript from "@/components/PrelineScript";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import PrelineScript from "../components/PrelineScript";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Mountain View Chamber of Commerce",
@@ -16,7 +14,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>): React.JSX.Element {
   return (
     <html lang="en" className="light">
       <body className="light">
@@ -28,5 +26,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-

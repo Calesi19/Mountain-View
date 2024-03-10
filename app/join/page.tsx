@@ -1,4 +1,4 @@
-import Image from "next/image";
+import React from "react";
 
 export default function JoinPage(): React.JSX.Element {
   return (
@@ -31,7 +31,7 @@ export default function JoinPage(): React.JSX.Element {
   );
 }
 
-function MembershipPlans() {
+function MembershipPlans(): React.JSX.Element {
   return (
     <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-center container">
       <div className="flex flex-col border border-gray-200 text-center rounded-xl p-8 h-full">
@@ -49,9 +49,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -67,9 +67,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -110,9 +110,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -128,9 +128,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -166,9 +166,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -184,9 +184,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -202,9 +202,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -243,9 +243,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -260,9 +260,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -277,9 +277,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -296,9 +296,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
@@ -313,9 +313,9 @@ function MembershipPlans() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>

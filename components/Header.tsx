@@ -1,9 +1,10 @@
+import React from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import { GiMountaintop } from "react-icons/gi";
 import Link from "next/link";
 
-export default function Header() {
+export default function Header(): React.JSX.Element {
   return (
     <header className="bg-white/10 backdrop-blur-lg flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-4 text-[#16284B] sticky top-0 z-50">
       <nav
