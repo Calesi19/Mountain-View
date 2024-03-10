@@ -118,7 +118,7 @@ const posts = [
   {
     id: 1,
     imgUrl: "/artsandcrafts.jpg",
-    author: "Jayme's Art Shop",
+    author: "March 19. 2024",
     title: "Arts and Crafts Night",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
@@ -127,15 +127,15 @@ const posts = [
     id: 2,
     imgUrl: "/concert.jpg",
     author: "Kyle Parsons",
-    title: "How to grow your personal brand as a web designer",
+    title: "Free Andrea Bates Concert",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
   {
     id: 3,
     imgUrl: "/meeting.jpg",
-    author: "Andrea Bates",
-    title: "Calm down, monoliths are totally fine",
+    author: "Growing your Business Seminar",
+    title: "Growing your Business Seminar",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
@@ -143,7 +143,7 @@ const posts = [
     id: 4,
     imgUrl: "/networking.jpg",
     author: "Jess Drum",
-    title: "A quick guide to Framer Motion (for dummies)",
+    title: "Annual Chamber Networking and Dinner",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
@@ -151,7 +151,7 @@ const posts = [
     id: 5,
     imgUrl: "/service.jpg",
     author: "Phil White",
-    title: "You probably don't need kubernetes",
+    title: "Clean Up at Sky View Park",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
@@ -159,7 +159,7 @@ const posts = [
     id: 6,
     imgUrl: "/laptop.jpg",
     author: "Karen Peabody",
-    title: "State of JavaScript in 2024",
+    title: "Cyber Security Conference",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
@@ -167,7 +167,7 @@ const posts = [
     id: 7,
     imgUrl: "/conference.jpg",
     author: "Dante Gordon",
-    title: "What's new in Python?",
+    title: "Market Research Conference",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },

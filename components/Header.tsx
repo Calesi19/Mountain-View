@@ -50,7 +50,7 @@ export default function Header() {
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
             <a
               className="font-medium text-[#16284B]"
-              href="#"
+              href="/discovery"
               aria-current="page"
             >
               Discovery

@@ -16,7 +16,7 @@ export default function Home() {
 function Hero() {
   return (
     <section className="w-full flex flex-col justify-center items-center ">
-      <div className="mx-auto w-full grid grid-cols-3 gap-4">
+      <div className="w-full grid grid-cols-3 gap-4 container">
         <HeroCard />
 
         <WeatherCard />
