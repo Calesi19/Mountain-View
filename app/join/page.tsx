@@ -20,7 +20,7 @@ export default function JoinPage(): React.JSX.Element {
             </p>
           </div>
           <div className="w-full h-auto rounded-xl overflow-hidden">
-            <img src="/group.jpg" alt="Chamber Group" />
+            <img src="/group.webp" alt="Chamber Group" />
           </div>
         </div>
       </div>

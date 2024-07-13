@@ -35,7 +35,7 @@ function HeroCard(): React.JSX.Element {
       <div className="w-full h-[400px] rounded-xl overflow-hidden">
         <Image
           className="rounded-xl"
-          src="/hero2.jpg"
+          src="/hero2.webp"
           alt="Image Description"
           layout="fill"
           objectFit="cover"
@@ -62,7 +62,7 @@ function WeatherCard(): React.JSX.Element {
         <div className="w-full h-[400px] rounded-xl overflow-hidden">
           <Image
             className="rounded-xl group-hover:blur-sm filter brightness-50 transform transition-transform ease-in-out duration-1000 group-hover:scale-105"
-            src="/hero.jpg"
+            src="/hero.webp"
             alt="Image Description"
             layout="fill"
             objectFit="cover"
@@ -95,7 +95,7 @@ function NetworkingCard(): React.JSX.Element {
       <div className="w-full h-[400px] rounded-xl overflow-hidden">
         <Image
           className="rounded-xl group-hover:blur-sm transform transition-transform ease-in-out duration-1000 group-hover:scale-105 group-hover:rotate-1 group-hover:translate-x-1 group-hover:translate-y-1"
-          src="/network.jpg"
+          src="/network.webp"
           alt="Image Description"
           layout="fill"
           objectFit="cover"
@@ -128,7 +128,7 @@ function BusinessCard(): React.JSX.Element {
       <div className="w-full h-[400px] rounded-xl overflow-hidden">
         <Image
           className="rounded-xl group-hover:blur-sm"
-          src="/network.jpg"
+          src="/network.webp"
           alt="Image Description"
           layout="fill"
           objectFit="cover"

@@ -129,7 +129,7 @@ export default BlogPostCarousel;
 const posts = [
   {
     id: 1,
-    imgUrl: "/artsandcrafts.jpg",
+    imgUrl: "/artsandcrafts.webp",
     author: "March 19. 2024",
     title: "Arts and Crafts Night",
     description:
@@ -137,7 +137,7 @@ const posts = [
   },
   {
     id: 2,
-    imgUrl: "/concert.jpg",
+    imgUrl: "/concert.webp",
     author: "Kyle Parsons",
     title: "Free Andrea Bates Concert",
     description:
@@ -145,7 +145,7 @@ const posts = [
   },
   {
     id: 3,
-    imgUrl: "/meeting.jpg",
+    imgUrl: "/meeting.webp",
     author: "Growing your Business Seminar",
     title: "Growing your Business Seminar",
     description:
@@ -153,7 +153,7 @@ const posts = [
   },
   {
     id: 4,
-    imgUrl: "/networking.jpg",
+    imgUrl: "/networking.webp",
     author: "Jess Drum",
     title: "Annual Chamber Networking and Dinner",
     description:
@@ -161,7 +161,7 @@ const posts = [
   },
   {
     id: 5,
-    imgUrl: "/service.jpg",
+    imgUrl: "/service.webp",
     author: "Phil White",
     title: "Clean Up at Sky View Park",
     description:
@@ -169,7 +169,7 @@ const posts = [
   },
   {
     id: 6,
-    imgUrl: "/laptop.jpg",
+    imgUrl: "/laptop.webp",
     author: "Karen Peabody",
     title: "Cyber Security Conference",
     description:
@@ -177,7 +177,7 @@ const posts = [
   },
   {
     id: 7,
-    imgUrl: "/conference.jpg",
+    imgUrl: "/conference.webp",
     author: "Dante Gordon",
     title: "Market Research Conference",
     description:
