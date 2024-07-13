@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheck } from "react-icons/fa6";
 
 export default function JoinPage(): React.JSX.Element {
   return (
@@ -10,7 +11,7 @@ export default function JoinPage(): React.JSX.Element {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-2xl font-bold mb-4">Membership Benefits</h2>
-            <p>
+            <p className="mr-20">
               The Mountain View Chamber of Commerce is a voluntary organization
               of business and professional people working to improve business
               and build a better community. We are a nonprofit organization
@@ -18,6 +19,37 @@ export default function JoinPage(): React.JSX.Element {
               from Chamber events. The Chamber is not a government agency and
               does not receive funds from the City of Mountain View.
             </p>
+            {/* Bullet points */}
+            <ul className="mt-5 space-y-2.5">
+              <li className="flex space-x-2 items-center">
+                <FaCheck className="text-blue-600" />
+                <span className="text-gray-800">
+                  Networking opportunities with other business owners
+                </span>
+              </li>
+
+              <li className="flex space-x-2 items-center">
+                <FaCheck className="text-blue-600" />
+                <span className="text-gray-800">
+                  Access to business resources and information
+                </span>
+              </li>
+
+              <li className="flex space-x-2 items-center">
+                <FaCheck className="text-blue-600" />
+                <span className="text-gray-800">
+                  Promotion of your business through our website and social
+                  media
+                </span>
+              </li>
+
+              <li className="flex space-x-2 items-center">
+                <FaCheck className="text-blue-600" />
+                <span className="text-gray-800">
+                  Discounts on Chamber events and advertising
+                </span>
+              </li>
+            </ul>
           </div>
           <div className="w-full h-auto rounded-xl overflow-hidden">
             <img src="/group.webp" alt="Chamber Group" />
@@ -331,5 +363,19 @@ function MembershipPlans(): React.JSX.Element {
         </a>
       </div>
     </div>
+  );
+}
+
+function GoogleMapEmbed() {
+  return (
+    <iframe
+      className="aspect-square w-full rounded-xl object-cover lg:w-auto"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d407.3674795695385!2d-111.78917535289398!3d43.81314490545258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b05a4b7f7ed%3A0x90109c39fc23b7a4!2s649%20S%202nd%20St%20W%2C%20Rexburg%2C%20ID%2083440!5e0!3m2!1sen!2sus!4v1693044010526!5m2!1sen!2sus"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Google Map Embed"
+    ></iframe>
   );
 }
