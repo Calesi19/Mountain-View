@@ -115,7 +115,6 @@ function PlaceCard({
       <div className="p-4">
         <h3 className="text-lg font-bold text-gray-800">{title}</h3>
         <p className="mt-1 text-gray-500">{description}</p>
-        <p className="mt-5 text-xs text-gray-500">Last updated 5 mins ago</p>
       </div>
     </div>
   );
