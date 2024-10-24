@@ -8,9 +8,9 @@ export default function ContactPage(): React.JSX.Element {
   return (
     <main className=" py-16">
       <ContactForm />
-      <div className="w-full h-[300px]">
-        <GoogleMapEmbed />
+      <div className="w-full tw-flex">
         <LocationDetails />
+        <GoogleMapEmbed />
       </div>
     </main>
   );
