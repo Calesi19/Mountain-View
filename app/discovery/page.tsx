@@ -128,7 +128,7 @@ const placeList = [
   {
     title: "Mountain View Park",
     category: "Scenery",
-    description: "A beautiful park with a stunning view",
+    description: "A beautiful park with walking trails",
     img: "/park.jpg",
   },
   {
